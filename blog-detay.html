@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana Sayfa</title>
+    <!--Remix Icon-->
+    <link rel="stylesheet" href="fonts/remixicon.css" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--Swiper-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Topbar Start -->
+    <section class="top-bar py-2">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-lg-auto d-none d-lg-block">
+            <div class="info d-flex align-lg-items-center">
+              <a href="#" class="text-light d-flex align-items-center"
+                ><i class="ri-map-pin-line"></i>
+                <small class="ms-1">Basaksehir, Istanbul</small></a
+              >
+              <a href="#" class="text-light d-flex align-items-center"
+                ><i class="ri-phone-line"></i>
+                <small class="ms-1">+0553 111 11 11</small></a
+              >
+              <a href="#" class="text-light d-flex align-items-center"
+                ><i class="ri-mail-line"></i>
+                <small class="ms-1">info@example.com</small></a
+              >
+            </div>
+          </div>
+          <div class="col-lg-auto">
+            <div class="top-socials d-flex align-lg-items-center">
+              <a href="#"><i class="ri-facebook-line"></i></a>
+              <a href="#"><i class="ri-twitter-line"></i></a>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+              <a href="#"><i class="ri-linkedin-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Carousel Start -->
+    <section class="nav sticky-lg-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-4">
+          <a class="navbar-brand" href="/">
+            <img src="img/logo.svg" class="img-fluid" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main_nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="ri-menu-line"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav ms-auto d-flex align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html"> Ana Sayfa </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Kurumsal
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end fade-down">
+                  <li>
+                    <a class="dropdown-item" href="/hakkimizda.html">
+                      Hakkımızda</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/ekip.html"> Ekip </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/hizmetler.html"> Hizmetler </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/blog.html"> Blog </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Sayfalar
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end fade-down">
+                  <li>
+                    <a class="dropdown-item" href="/hizmet-detay.html">
+                      Hizmet Detay</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/blog-detay.html">
+                      Blog Detay
+                    </a>
+                  </li>
+                  <li><a class="dropdown-item" href="/404.html"> 404 </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/iletisim.html"> İletişim </a>
+              </li>
+            </ul>
+          </div>
+          <!-- navbar-collapse.// -->
+        </nav>
+      </div>
+    </section>
+    <!-- Navbar & Carousel End -->
+
+    <!--Breadcrumb Start-->
+    <div class="container-fluid bg-primary py-5 custom-breadcrumb">
+      <div class="row py-5">
+        <div class="col-12 text-center">
+          <h2 class="text-white my-5">Sayfa Başlık</h2>
+        </div>
+        <div class="col-12 text-center">
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb ">
+              <li class="breadcrumb-item"><a href="#">Ana Sayfa</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Hakkımızda</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!--Breadcrumb End-->
+
+    <!-- Blog-Detail -->
+    <section class="blog-detail blog py-5">
+      <div class="container">
+        <div class="row mt-4 justify-content-between">
+          <!--Post Content Start-->
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-12">
+                <h1 class="post-content-title">Lorem ipsum dolor sit amet.</h1>
+                <img
+                  src="img/featured-img.jpg"
+                  class="img-fluid"
+                  alt="post-img"
+                />
+
+                <div class="post-info d-flex align-content-center">
+                  <a href="#" class="category">Web Tasarım</a>
+                  <p class="date">28.06.2022</p>
+                </div>
+                <div class="post-content my-2">
+                  <p>
+                    Most times, ideacide happens without us even realizing it. A
+                    possible off-the-wall idea or solution appears like a blip
+                    and disappears without us even realizing. As a result, some
+                    of our best stuff is suppressed before even getting out into
+                    the world. Whether it’s because we’re too critical or
+                    because we recoil at the impending pain of change, the
+                    disruption of normalcy, self-censoring arises out of fear.
+                    Welsh novelist Sarah Waters sums it up eloquently: “Midway
+                    through writing a novel, I have regularly experienced
+                    moments of bowel-curdling terror, as I contemplate the
+                    drivel on the screen before me and see beyond it, in quick
+                    succession, the derisive reviews, the friends’
+                    embarrassment, the failing career, the dwindling income, the
+                    repossessed house, the divorce…” We know self-censoring by
+                    many names. Carl Jung called it our “inner critic.” Michael
+                    Ray and Rochelle Myers called it the “voice of judgment” in
+                    their classic book, in Business, based on a popular course
+                    they co-taught at Stanford University the derisive reviews,
+                    the friends’ embarrassment, the failing career, the
+                    dwindling income, the repossessed
+                  </p>
+                </div>
+              </div>
+              <!--Post Content End-->
+              <!--Comment Start-->
+              <div class="col-lg-12 my-4">
+                <div class="comment">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-12 col-lg-12">
+                      <h4 class="mb-4 pb-2">7 Yorum</h4>
+                      <hr />
+                      <div class="row">
+                        <div class="col">
+                          <div class="d-flex flex-start">
+                            <img
+                              class="rounded-circle shadow-1-strong me-3"
+                              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                              alt="avatar"
+                              width="65"
+                              height="65"
+                            />
+                            <div class="flex-grow-1 flex-shrink-1">
+                              <div>
+                                <div
+                                  class="d-flex justify-content-between align-items-center"
+                                >
+                                  <p class="mb-1">
+                                    melike özen
+                                    <span class="small">- 2 saat önce</span>
+                                  </p>
+                                  <a href="#!" class="d-flex align-items-center"
+                                    ><i class="ri-reply-fill"></i
+                                    ><span class="small"> cevapla</span></a
+                                  >
+                                </div>
+                                <p class="small mb-0">
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Optio, error?
+                                </p>
+                              </div>
+
+                              <div class="d-flex flex-start mt-4">
+                                <a class="me-3" href="#">
+                                  <img
+                                    class="rounded-circle shadow-1-strong"
+                                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(11).webp"
+                                    alt="avatar"
+                                    width="65"
+                                    height="65"
+                                  />
+                                </a>
+                                <div class="flex-grow-1 flex-shrink-1">
+                                  <div>
+                                    <div
+                                      class="d-flex justify-content-between align-items-center"
+                                    >
+                                      <p class="mb-1">
+                                        Aslı Soran
+                                        <span class="small">- 3 saat önce</span>
+                                      </p>
+                                    </div>
+                                    <p class="small mb-0">
+                                      Lorem ipsum dolor sit, amet consectetur
+                                      adipisicing elit. Corporis, suscipit
+                                      obcaecati dolor est facilis magnam ipsa ab
+                                      consequatur quis harum!
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="d-flex flex-start mt-4">
+                                <a class="me-3" href="#">
+                                  <img
+                                    class="rounded-circle shadow-1-strong"
+                                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"
+                                    alt="avatar"
+                                    width="65"
+                                    height="65"
+                                  />
+                                </a>
+                                <div class="flex-grow-1 flex-shrink-1">
+                                  <div>
+                                    <div
+                                      class="d-flex justify-content-between align-items-center"
+                                    >
+                                      <p class="mb-1">
+                                        Fuat Genc
+                                        <span class="small">- 4 saat önce</span>
+                                      </p>
+                                    </div>
+                                    <p class="small mb-0">
+                                      Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Quae id nemo, iste velit
+                                      sapiente illum.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="d-flex flex-start mt-4">
+                            <img
+                              class="rounded-circle shadow-1-strong me-3"
+                              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(12).webp"
+                              alt="avatar"
+                              width="65"
+                              height="65"
+                            />
+                            <div class="flex-grow-1 flex-shrink-1">
+                              <div>
+                                <div
+                                  class="d-flex justify-content-between align-items-center"
+                                >
+                                  <p class="mb-1">
+                                    Esra
+                                    <span class="small">- 2 saat önce</span>
+                                  </p>
+                                  <a href="#!" class="d-flex align-items-center"
+                                    ><i class="ri-reply-fill"></i
+                                    ><span class="small"> cevapla</span></a
+                                  >
+                                </div>
+                                <p class="small mb-0">
+                                  Lorem ipsum dolor sit amet consectetur,
+                                  adipisicing elit. Culpa enim laborum mollitia
+                                  fuga quibusdam aspernatur. Optio, odit.
+                                </p>
+                              </div>
+
+                              <div class="d-flex flex-start mt-4">
+                                <a class="me-3" href="#">
+                                  <img
+                                    class="rounded-circle shadow-1-strong"
+                                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
+                                    alt="avatar"
+                                    width="65"
+                                    height="65"
+                                  />
+                                </a>
+                                <div class="flex-grow-1 flex-shrink-1">
+                                  <div>
+                                    <div
+                                      class="d-flex justify-content-between align-items-center"
+                                    >
+                                      <p class="mb-1">
+                                        Aleyna Kun
+                                        <span class="small">- 4 saat önce</span>
+                                      </p>
+                                    </div>
+                                    <p class="small mb-0">
+                                      Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Officiis impedit
+                                      praesentium quasi repellendus laudantium
+                                      illum nesciunt odit fuga, eos dolores
+                                      dolorum at nam cupiditate reiciendis.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="d-flex flex-start mt-4">
+                                <a class="me-3" href="#">
+                                  <img
+                                    class="rounded-circle shadow-1-strong"
+                                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(29).webp"
+                                    alt="avatar"
+                                    width="65"
+                                    height="65"
+                                  />
+                                </a>
+                                <div class="flex-grow-1 flex-shrink-1">
+                                  <div>
+                                    <div
+                                      class="d-flex justify-content-between align-items-center"
+                                    >
+                                      <p class="mb-1">
+                                        Esra Bilen
+                                        <span class="small">- 5 saat önce</span>
+                                      </p>
+                                    </div>
+                                    <p class="small mb-0">
+                                      Lorem ipsum dolor sit amet consectetur,
+                                      adipisicing elit. Cupiditate unde earum
+                                      eius porro dolore quos laboriosam
+                                      distinctio reprehenderit! Hic, recusandae!
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="d-flex flex-start mt-4">
+                                <a class="me-3" href="#">
+                                  <img
+                                    class="rounded-circle shadow-1-strong"
+                                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"
+                                    alt="avatar"
+                                    width="65"
+                                    height="65"
+                                  />
+                                </a>
+                                <div class="flex-grow-1 flex-shrink-1">
+                                  <div>
+                                    <div
+                                      class="d-flex justify-content-between align-items-center"
+                                    >
+                                      <p class="mb-1">
+                                        Fuat Genc
+                                        <span class="small">- 6 saat önce</span>
+                                      </p>
+                                    </div>
+                                    <p class="small mb-0">
+                                      Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Nisi, dignissimos
+                                      aliquid dolorem ipsum repellendus commodi
+                                      ducimus quia autem vitae illum iure iusto?
+                                      Beatae, sit vero!
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Comment End-->
+              <!--Comment Form Start-->
+              <div class="col-lg-12 py-4">
+                <form action="" class="comment-form gy-4">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="İsim"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mt-2">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mt-2">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="Mesaj"
+                      class="form-control"
+                    ></textarea>
+                  </div>
+                  <div class="form-group mt-2">
+                    <a href="#" class="custom-button-one d-inline-block"
+                      >Gönder</a
+                    >
+                  </div>
+                </form>
+              </div>
+              <!--Comment Form End-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Blog Detail-->
+
+   <!--Footer-->
+   <footer id="footer" class="py-5">
+    <div class="container">
+      <div class="row mb-4 justify-content-between">
+        <div class="col-md-3 col-sm-11">
+          <div class="footer-text pull-left">
+            <div class="d-flex">
+              <a href="index.html"><img src="img/logo-dark.svg" alt="logo" class="img-fluid logo" /></a>
+            </div>
+            <p class="company-text mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Commodi non pariatur numquam animi nam at impedit odit nisi.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 mt-4 mt-lg-0">
+          <h5 class="heading">Faydalı Linkler</h5>
+          <ul class="footer-links mt-lg-4 list-unstyled">
+            <li>
+              <a href="index.html"> Ana Sayfa </a>
+            </li>
+            <li>
+              <a href="hakkimizda.html"> Hakkımızda </a>
+            </li>
+            <li>
+              <a href="ekip.html"> Ekip </a>
+            </li>
+            <li>
+              <a href="hizmetler.html"> Hizmetler </a>
+            </li>
+            <li>
+              <a href="blog.html"> Blog </a>
+            </li>
+            <li>
+              <a href="iletisim.html"> İletişim </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-sm-4">
+          <h5 class="heading">Hizmetlerimiz</h5>
+          <ul class="footer-links mt-lg-4 list-unstyled">
+            <li>
+              <a href="hizmet-detay.html"> Web Tasarım </a>
+            </li>
+            <li>
+              <a href="hizmet-detay.html"> Hizmet Adı </a>
+            </li>
+            <li>
+              <a href="hizmet-detay.html"> Hizmet Adı </a>
+            </li>
+            <li>
+              <a href="hizmet-detay.html"> Hizmet Adı </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-sm-4">
+          <h5 class="heading">İletişim</h5>
+          <ul class="footer-links list-unstyled">
+            <li>
+              <strong class="text-white">Adres:</strong>
+              <a href="#" class="text-muted"> Adres Bilgisi Girilecektir. Şehir, ÜLKE </a>
+            </li>
+            <li>
+              <strong class="text-white">E-posta:</strong>
+              <a href="#" class="text-muted"> info@siteadi.com </a>
+            </li>
+            <li>
+              <strong class="text-white">Telefon:</strong>
+              <a href="#" class="text-muted"> 0850 000 00 00 </a>
+            </li>
+          </ul>
+
+          <div class="social mt-2 mb-3 d-flex align-items-center">
+            <a href="#" class="bg-white p-2 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="#" class="bg-white p-2 ms-2 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="#" class="bg-white p-2 ms-2 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+              <i class="ri-twitter-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Footer-->
+
+  <!--Back To Top-->
+  <a class="back-to-top" style="cursor: pointer" onclick="topFunction()">
+    <i class="ri-arrow-up-line"></i>
+  </a>
+  <!--Back To Top-->
+
+  <!--Bootstrap-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!--Swiper JS-->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!--Main JS-->
+  <script src="js/main.js"></script>
+</body>
+</html>

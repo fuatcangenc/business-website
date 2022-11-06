@@ -1,0 +1,66 @@
+@import "./variables.scss";
+
+@media all and (min-width: 992px) {
+    .navbar .dropdown-menu-end {
+        right: 0;
+        left: auto;
+    }
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        margin-top: 0;
+    }
+    //.navbar .nav-item:hover .nav-link{ color: #fff;  }
+    .navbar .dropdown-menu.fade-down {
+        top: 80%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+    }
+    .navbar .dropdown-menu.fade-up {
+        top: 180%;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        transition: 0.3s;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        transform: rotateX(0deg);
+    }
+    .head-desc {
+        max-width: 50%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:992px) {
+    h1 {
+        font-size: 2.209rem;
+        font-weight: 700;
+        color:$heading;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+        font-weight: 700;
+        color:$heading;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+        font-weight: 700;
+        color:$heading;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color:$heading;
+    }
+
+    h5 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color:$heading;
+    }
+}

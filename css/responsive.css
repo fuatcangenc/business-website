@@ -1,0 +1,67 @@
+/********** Template CSS **********/
+@media all and (min-width: 992px) {
+  .navbar .dropdown-menu-end {
+    right: 0;
+    left: auto;
+  }
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-top: 0;
+  }
+  .navbar .dropdown-menu.fade-down {
+    top: 80%;
+    -webkit-transform: rotateX(-75deg);
+            transform: rotateX(-75deg);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  .navbar .dropdown-menu.fade-up {
+    top: 180%;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  .head-desc {
+    max-width: 50%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2.209rem;
+    font-weight: 700;
+    color: #091028;
+  }
+  h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #091028;
+  }
+  h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #091028;
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #091028;
+  }
+  h5 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #091028;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
